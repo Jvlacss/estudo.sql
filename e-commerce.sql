@@ -21,7 +21,7 @@ CREATE TABLE fornecedor_has_produto (
 
 CREATE TABLE entrega (
     identrega INT PRIMARY KEY,
-    status VARCHAR(45),
+    status ENUM('PROCESSAMENTO','DESLOCAMENTO','ENTREGUE'),
     tempo_estimado INT
 );
 
